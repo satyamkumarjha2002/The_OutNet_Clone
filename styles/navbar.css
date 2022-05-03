@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+i{
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    font-size: 100px;
+}
+#navbar-start{
+    width: 100%;
+}
+#navbar{
+    width: 95%;
+    margin: auto;
+}
+#s-signup-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+#s-buttons>a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-right: 1px solid gray;
+}
+#s-country>img{
+    width: 30px;
+}
+#s-country>a{
+    padding: 5px;
+    margin-right: 10px;
+    border-right: 1px solid gray;
+}
+
+#s-country{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#s-middle{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#s-men-women{
+    display: flex;
+}
+#serach-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#serach-cart>a{
+    margin-right: 20px;
+}
+#serach-cart>p{
+    margin-right: 10px;
+    border-right: 1px solid gray;
+    padding: 5px;
+}
+#s-logo{
+    letter-spacing: 20px;
+    font-size: 20px;
+}
+#s-men-women>a{
+    border-right: 1px solid gray;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+#s-nav_btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid gray;
+}
+#s-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #F2F2F2;
+    margin-top: 10px;
+}
