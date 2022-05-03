@@ -1,0 +1,51 @@
+#z-top-c{
+    margin:auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:90%;
+    margin-top:25px;
+
+}
+#z-top-in1{
+    height:256px;
+    width:256px;
+    
+    
+}
+#z-top-in1 h2{
+    margin:16px;
+    margin-top:35px;
+    color:rgb(54, 51, 51);
+    font-weight: 500;
+ 
+}
+#z-top-in1 h6{
+   margin:16px;
+    height:150px;
+    width:435px;
+    font:14px/1.375 ,Arial;
+    line-height: 20px;
+    font-weight: 500;
+    color:rgb(54, 51, 51);
+   
+   
+
+}
+#z-top-in2{
+    height:256px;
+    width:256px
+}
+#z-top-in2 img{
+    height:100%;
+    width:100%;
+}
+#z-top-in2:after{
+    margin: 0 0 48px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e6e6e6;
+    height: auto;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
