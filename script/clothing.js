@@ -1154,9 +1154,11 @@ data.map((el)=>{
   span.innerText=el.ProductItem24__name
   fp.innerText=el.PriceWithSchema9__value
   fp.style.color="#B90000"
+  fp.style.fontWeight="500"
   sp.innerText=el.PriceWithSchema9__wasPrice
   sp.style.textDecoration="line-through"
   off.innerText=el.PriceWithSchema9__discount
+  tag.innerText=el.SingleBadge2__badge
   div1.append(sp,off)
   div.append(img,h4,span,fp,div1,tag)
   document.querySelector("#z-showdata").append(div)
