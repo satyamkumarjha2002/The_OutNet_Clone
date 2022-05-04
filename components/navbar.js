@@ -29,8 +29,8 @@ let navbar = () => {
         <div id="serach-cart">
             <i id="s_search" class="fa-solid fa-magnifying-glass"></i>
             <p>search</p>
-            <a id="heart" href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a id="heart" href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
     </div>
     <div id="s-search-box">
@@ -43,7 +43,7 @@ let navbar = () => {
         <a id="justin" href="#">Just in</a>
         <a id="best" href="#">Bestsellers</a>
         <a id="desgin"  href="#">Desginer</a>
-        <a id="cloth"  href="#">Clothing</a>
+        <a id="cloth"  href="clothing.html">Clothing</a>
         <a id="shoe"  href="#">Shoes</a>
         <a id="accessor"  href="#">Accessories</a>
         <a id="spo"  href="#">Sport</a>
