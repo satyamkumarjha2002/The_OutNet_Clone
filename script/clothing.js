@@ -29,8 +29,6 @@ function showthediv(id){
    
   }
  
-
- 
   
 }
   let alldiv=  document.querySelectorAll("#z-sort-items>div")

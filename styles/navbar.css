@@ -218,3 +218,33 @@ span {
 div>img {
     width: 100%;
 }
+#s_search:hover{
+cursor: pointer;
+}
+#s-search-box{
+   width: 70%;
+   margin: auto;
+   height:600px;
+   padding: 20px;
+   border-radius: 30px;
+   /* display: flex; */
+   display:none;
+   background-color: rgba(0, 0, 0, 0.144);
+}
+#s-input-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#s-input-box>input{
+    border-radius: 30px;
+    width: 50%;
+    height:40px;
+    border: 1px solid teal;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#s-cut:hover{
+    cursor: pointer;
+}
