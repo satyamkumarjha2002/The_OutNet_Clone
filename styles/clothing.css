@@ -72,8 +72,8 @@
 }
 #z-sort-items{
     margin:25px;
-    width:200px;
-    margin-left:5%
+    width:300px;
+    
 }
 #z-sort-items span{
     font-size: 14px;
@@ -224,4 +224,35 @@ margin-bottom:15px
 #z-designer{
     margin-top: 25px;
     
+}
+#z-bind-both{
+    
+    display:flex;
+    justify-content: space-around;
+}
+#z-showdata{
+   
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap:100px;
+    align-content: space-around;
+
+}
+#z-showdata>div{
+    height:400px;
+    width:200px;
+    text-align: center;
+    
+}
+#z-showdata span{
+    font-size: 14px;
+   margin:5px
+}
+.z-flex{
+    display:flex;
+  justify-content: center;
+}
+#z-showdata h4{
+    margin:5px
 }
