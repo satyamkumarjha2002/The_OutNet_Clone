@@ -1138,6 +1138,8 @@ rangeInput.forEach(input =>{
         }
     });
 });
+function append(data){
+  document.querySelector("#z-showdata").innerHTML=null
 data.map((el)=>{
   let div= document.createElement("div")
   let img=document.createElement("img")
@@ -1164,3 +1166,55 @@ data.map((el)=>{
   document.querySelector("#z-showdata").append(div)
   
 })
+document.querySelector("#z-counter-div").innerText=`${data.length} results`
+}
+
+function sortvalue(value){
+ if(value==null){
+   return
+ }
+ value=value.trim()
+ value= value.split("")
+//  console.log(value)
+  for(let i=0; i<value.length; i++){
+    if(value[i]=="$"||value[i]==","||value[i]=="o"||value=="f"||value=="f"||value=="%"||value==' '){
+      value.splice(i,1)
+      i=0
+    }
+  }
+if(value[5]=="f"){
+  value=value.join("")
+let x= value[0]+value[1]
+  return Number(x)
+} 
+  return Number(value.join(""))
+  
+}
+append(data)
+document.querySelector("#z-sort").addEventListener("change", function(){
+          sortfun()
+})
+
+
+function sortfun(){
+  let low=document.querySelector("#z-sort").value
+ 
+  if(low=="lth"){
+data =data.sort((a,b)=>{
+  return sortvalue(a.PriceWithSchema9__value)-sortvalue(b.PriceWithSchema9__value)
+})
+append(data)
+}
+if(low=="htl"){
+  data =data.sort((a,b)=>{
+    return sortvalue(b.PriceWithSchema9__value)-sortvalue(a.PriceWithSchema9__value)
+  })
+  append(data)
+}
+if(low=="hd"){
+  data =data.sort((a,b)=>{
+    return sortvalue(b.PriceWithSchema9__discount)-sortvalue(a.PriceWithSchema9__discount)
+  })
+  append(data)
+}
+}
