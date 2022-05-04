@@ -27,12 +27,18 @@ let navbar = () => {
             </a>
         </div>
         <div id="serach-cart">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i id="s_search" class="fa-solid fa-magnifying-glass"></i>
             <p>search</p>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a id="heart" href="#"><i class="fa-solid fa-heart"></i></a>
             <a href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </div>
     </div>
+    <div id="s-search-box">
+         <div id="s-input-box">
+              <input type="text" id="s-query" placeholder="search items">
+              <i id="s-cut" class="fa-solid fa-xmark"></i>
+         </div>
+     </div>
     <div id="s-nav_btn">
         <a id="justin" href="#">Just in</a>
         <a id="best" href="#">Bestsellers</a>
@@ -48,7 +54,7 @@ let navbar = () => {
     <div  class="s-just-in">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+                <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -83,7 +89,7 @@ let navbar = () => {
     <div  class="s-best-sellers">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -118,7 +124,7 @@ let navbar = () => {
     <div  class="s-desginer">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -153,7 +159,7 @@ let navbar = () => {
     <div  class="s-clothing">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -189,7 +195,7 @@ let navbar = () => {
     <div  class="s-shoes">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -224,7 +230,7 @@ let navbar = () => {
     <div class="s-access">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -261,7 +267,7 @@ let navbar = () => {
     <div  class="s-sport">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -297,7 +303,7 @@ let navbar = () => {
     <div  class="s-warddrop">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -332,7 +338,7 @@ let navbar = () => {
     <div class="s-off">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
@@ -367,7 +373,7 @@ let navbar = () => {
     <div class="s-editorial">
         <div class="s-fst">
             <a>
-                <h3>Shop Just in</h3>
+            <h3>Shop by discount</h3>
             </a>
             <a href="#">All Just in</a>
             <a href="#">Just in Last Week</a>
