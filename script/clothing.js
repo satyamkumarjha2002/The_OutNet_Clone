@@ -1,10 +1,12 @@
 import { navbar} from "../components/navbar.js";
 document.querySelector("#navbar").innerHTML=navbar();
 import {navbar_function} from "../components/navbar_function.js";
-import {data} from "../product data/json_to_ob.js"
+
 setTimeout(() => {
     navbar_function()
 }, 1000);
+let data=JSON.parse(localStorage.getItem("product_data"))
+console.log(data)
 let data1 = data.mens
 
 
