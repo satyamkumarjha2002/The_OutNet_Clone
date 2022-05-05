@@ -2,7 +2,7 @@ let navbar = () => {
     return ` <div id="s-signup-login">
     <div id="s-country">
         <a style="border-right: none;" href="#"><i class="fa-solid fa-user"></i></a>
-        <a href="">signin</a>
+        <a href="signup_signin.html" id="sign-in">signin</a>
         <img src="../images/flag-round-250-removebg-preview.png" alt="">
         <p style="padding: 5px;">India</p>
     </div>
