@@ -112,7 +112,9 @@ function append(data) {
     let div1 = document.createElement("div")
     div1.setAttribute("class", "z-flex")
     img.src = el["Image18__image src"]
+    if(el.ProductItem24__designer!=null){
     h4.innerText = el.ProductItem24__designer
+  }
     span.innerText = el.ProductItem24__name
     fp.innerText = el.PriceWithSchema9__value
     fp.style.color = "#B90000"
@@ -123,6 +125,9 @@ function append(data) {
     tag.innerText = el.SingleBadge2__badge
     div1.append(sp, off)
     div.append(img, h4, span, fp, div1, tag)
+    div.addEventListener("click",()=>{
+      showonthepage(el)
+    })
     document.querySelector("#z-showdata").append(div)
 
   })
@@ -177,4 +182,11 @@ function sortfun() {
     })
     append(data)
   }
+}
+
+function showonthepage(el){
+  let arr=[]
+  arr.push(el)
+  localStorage.setItem("productpage",JSON.stringify(arr))
+  window.location.href="productpage.html"
 }
