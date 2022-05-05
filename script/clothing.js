@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { navbar} from "../components/navbar.js";
-document.querySelector("#navbar").innerHTML=navbar();
-import {navbar_function} from "../components/navbar_function.js";
-
-=======
 import {
   navbar
 } from "../components/navbar.js";
@@ -11,20 +5,9 @@ document.querySelector("#navbar").innerHTML = navbar();
 import {
   navbar_function
 } from "../components/navbar_function.js";
->>>>>>> 063b49e256f5e3153ae624cc24e77d090e46bcf0
 setTimeout(() => {
   navbar_function()
 }, 1000);
-<<<<<<< HEAD
-let data=JSON.parse(localStorage.getItem("product_data"))
-console.log(data)
-let data1 = data.mens
-
-
-
-
-function showthediv(id){
-=======
 let product_data = JSON.parse(localStorage.getItem("product_data"));
 let key = localStorage.getItem("key");
 console.log(key)
@@ -45,7 +28,6 @@ switch (key) {
 }
 
 function showthediv(id) {
->>>>>>> 063b49e256f5e3153ae624cc24e77d090e46bcf0
   console.log(id)
   if (document.querySelector(`#${id} ul`).style.display == "" || document.querySelector(`#${id} ul`).style.display == "none") {
     if (id == "z-size-shoe" || id == "z-size-shirt" || id == "z-size") {
@@ -168,41 +150,6 @@ function sortvalue(value) {
   return Number(value.join(""))
 
 }
-<<<<<<< HEAD
-append(data1)
-document.querySelector("#z-sort").addEventListener("change", function(){
-          sortfun()
-})
-
-
-function sortfun(){
-  let low=document.querySelector("#z-sort").value
- 
-  if(low=="lth"){
-data1 =data1.sort((a,b)=>{
-  return sortvalue(a.PriceWithSchema9__value)-sortvalue(b.PriceWithSchema9__value)
-})
-append(data1)
-}
-if(low=="htl"){
-  data1 =data1.sort((a,b)=>{
-    return sortvalue(b.PriceWithSchema9__value)-sortvalue(a.PriceWithSchema9__value)
-  })
-  append(data1)
-}
-if(low=="hd"){
-  data1 =data1.sort((a,b)=>{
-    return sortvalue(b.PriceWithSchema9__discount)-sortvalue(a.PriceWithSchema9__discount)
-  })
-  append(data1)
-}
-}
-function showonpage(el){
-  let arr=[]
-  arr.push(el)
-  localStorage.setItem("productpage",JSON.stringify(arr))
-  window.location.href="productpage.html"
-=======
 append(data)
 document.querySelector("#z-sort").addEventListener("change", function () {
   sortfun()
@@ -230,5 +177,4 @@ function sortfun() {
     })
     append(data)
   }
->>>>>>> 063b49e256f5e3153ae624cc24e77d090e46bcf0
 }
