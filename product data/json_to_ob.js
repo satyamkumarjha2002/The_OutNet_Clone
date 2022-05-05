@@ -4374,3 +4374,4 @@ let data = {
 }
 console.log(data);
 //key=mens,womens,shoes,jeans;
+export {data}
