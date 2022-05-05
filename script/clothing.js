@@ -109,6 +109,9 @@ data.map((el)=>{
   tag.innerText=el.SingleBadge2__badge
   div1.append(sp,off)
   div.append(img,h4,span,fp,div1,tag)
+  div.addEventListener("click",()=>{
+    showonpage(el)
+  })
   document.querySelector("#z-showdata").append(div)
   
 })
@@ -163,4 +166,10 @@ if(low=="hd"){
   })
   append(data1)
 }
+}
+function showonpage(el){
+  let arr=[]
+  arr.push(el)
+  localStorage.setItem("productpage",JSON.stringify(arr))
+  window.location.href="productpage.html"
 }
