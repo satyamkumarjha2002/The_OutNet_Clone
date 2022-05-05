@@ -1,5 +1,14 @@
 
 /* 1st div css */  /* 1st div css */  /* 1st div css */  /* 1st div css */  /* 1st div css */
+/* *{
+    overflow-x: hidden;
+} */
+
+#mrcontainer
+{
+    width: 95%;
+    margin: auto;
+}
 #womencont {
     width: 100%;
     height: 630px;
@@ -17,17 +26,18 @@
 }
 
 .wo {
-    width: 650px;
+    width: 630px;
     height: 630px;
     cursor: pointer;
 }
 
 #firstbtn {
     padding: 12px;
-    margin-left: 220px;
+    margin-left: 240px;
     background-color: white;
     border: 1px solid black;
     cursor: pointer;
+    margin-top: 30px;
     
 }
 
@@ -49,7 +59,7 @@
 
 
 #lady3>div {
-    width: 425px;
+    width: 415px;
     height: 430px;
     /* border: 1px solid teal; */
     margin: auto;
@@ -57,7 +67,7 @@
 }
 
 #mr {
-    width: 425px;
+    width: 415px;
     height: 430px;
     cursor: pointer;
 }
@@ -68,7 +78,7 @@
     background-color: white;
     border: 1px solid black;
     cursor: pointer;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 #mrbtn:hover {
@@ -138,17 +148,39 @@
     margin-top: 160px;
     /* display: block; */
     display: flex;
+    overflow-x: scroll;
 }
+
+.arro
+{
+    padding: 20px;
+    cursor: pointer;
+}
+#sliderwindow::-webkit-scrollbar {
+    display: none;
+  }
+
+  #slidingarrow
+  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      /* cursor: pointer; */
+      /* padding-left: 15px;
+      padding-right: 15px; */
+  }
 #sliderwindow>div{
-    width: 240px;
+    width: 270px;
     height: 350px;
     /* border: 1px solid rebeccapurple; */
     margin: auto;
     gap: 10px;
     cursor: pointer;
+  
 }
 #slideimg
-{   width: 150px;
+{   width: 200px;
     height: 250px;
     margin: 20px 40px 10px 40px;
     cursor: pointer;
@@ -163,4 +195,19 @@
     overflow: hidden;
     
 }
+*/
+/*
+git clone link
+git branch mahesh
+git checkout branch name
+
+
+git add .
+git commit -m "comment"
+git push origin ( branch name)
+
+git pull orgin satyam/sajnay/
+
+git checkout master
+
 */
