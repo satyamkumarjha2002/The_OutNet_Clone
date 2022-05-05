@@ -11,7 +11,7 @@ setTimeout(() => {
 let product_data = JSON.parse(localStorage.getItem("product_data"));
 let key = localStorage.getItem("key");
 console.log(key)
-let data = product_data.mens;
+let data = product_data.different_data;
 switch (key) {
   case "mens":
     data = product_data.mens;

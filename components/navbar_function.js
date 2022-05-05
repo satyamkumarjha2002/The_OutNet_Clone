@@ -213,43 +213,46 @@ function navbar_function() {
         j.style.display = "none"
     }
     let s_search = document.querySelector("#s_search");
-s_search.addEventListener("click", search_fun);
+    s_search.addEventListener("click", search_fun);
 
-function search_fun() {
-    let serach_box = document.querySelector("#s-search-box");
-    serach_box.style.display = "block";
-}
-let cut = document.querySelector("#s-cut");
-cut.addEventListener("click", cutthebox);
+    function search_fun() {
+        let serach_box = document.querySelector("#s-search-box");
+        serach_box.style.display = "block";
+    }
+    let cut = document.querySelector("#s-cut");
+    cut.addEventListener("click", cutthebox);
 
-function cutthebox() {
-    let serach_box = document.querySelector("#s-search-box");
-    serach_box.style.display = "none";
-}
-let query = document.querySelector("#s-query");
-query.addEventListener("input", debaunce);
+    function cutthebox() {
+        let serach_box = document.querySelector("#s-search-box");
+        serach_box.style.display = "none";
+    }
+    let query = document.querySelector("#s-query");
+    query.addEventListener("keypress", user_input);
 
-function user_input() {
-    let value = query.value;
-    console.log(value);
-}
+    function user_input(event) {
+        let value = query.value;
+        if (event.key == "Enter") {
+            localStorage.setItem("key",value);
+            window.location.href="clothing.html";
+        }
+    }
 
-function main() {
-    user_input();
-}
-let id;
+    function main() {
+        user_input();
+    }
+    let id;
 
-function debaunce() {
-    clearTimeout(id);
-    id = setTimeout(() => {
-        main();
-    }, 1000);
-}
-let user_sing_in_data = JSON.parse(localStorage.getItem("signed"));
-let display_data = document.querySelector("#sign-in");
-if (user_sing_in_data != null) {
-    display_data.innerText = user_sing_in_data.first_name;
-}
+    function debaunce() {
+        clearTimeout(id);
+        id = setTimeout(() => {
+            main();
+        }, 1000);
+    }
+    let user_sing_in_data = JSON.parse(localStorage.getItem("signed"));
+    let display_data = document.querySelector("#sign-in");
+    if (user_sing_in_data != null) {
+        display_data.innerText = user_sing_in_data.first_name;
+    }
 }
 
 export {
