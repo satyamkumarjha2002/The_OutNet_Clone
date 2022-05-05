@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="responsive/navbar.css">
     <link rel="stylesheet" href="styles/women.css">
-    <script src="script/navbar.js" type="module"></script>
     <style>
         #women {
             color: #F2F2F2;
@@ -27,7 +26,7 @@
   <div id="mrcontainer">
         <div id="womencont">
             <div>
-                <img class="wo"
+                <img class="wo" id="m-image1"
                     src="https://www.theoutnet.com/cms/ycm/resource/blob/1251090/8265d19173eb9720cf82cf3366478685/main-1-image-data.jpg/w1400_q80.jpg" />
                 <p style="font-size: 20px;text-align: center;margin-top: 20px;   ">BRUNELLO CUCINELLI AT UP TO 50% OFF</p>
                 <p style="text-align: center;font-size: 16px; margin-top: 20px;  ">Sophisticated yet simple:shop our edit of elegant clost
@@ -36,7 +35,7 @@
                     BRUNELLO CUCINELLI</button>
             </div>
             <div>
-                <img class="wo"
+                <img class="wo" id="m-image2"
                     src="https://www.theoutnet.com/cms/ycm/resource/blob/1251106/bb000716294ea50149d3ef65d0a62e3b/main-2-image-data.jpg/w1400_q80.jpg" />
                 <p style="font-size: 20px;text-align: center;margin-top: 20px; ">TORY BURCH AT UP TO 65% OFF</p>
                 <P style="text-align: center;font-size: 16px;margin-top: 20px; ">These new arrival are packed with personality</P>
@@ -182,6 +181,11 @@
 </body>
 
 </html>
-
+<script type="module">
+    import {navbar} from "../components/navbar.js"
+    import {navbar_function} from "../components/navbar_function.js"
+    document.querySelector("#navbar-start").innerHTML=navbar();
+    navbar_function();
+</script>
 <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 <script src="./script/women.js"></script>

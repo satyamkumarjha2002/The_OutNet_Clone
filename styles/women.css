@@ -9,6 +9,9 @@
     width: 95%;
     margin: auto;
 }
+img:hover{
+    cursor: pointer;
+}
 #womencont {
     width: 100%;
     height: 630px;
