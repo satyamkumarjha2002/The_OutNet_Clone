@@ -10,3 +10,12 @@ import { slider } from "../components/slider.js";
 
 slider(data);
 
+let image1=document.querySelector("#f-image-2");
+let image2=document.querySelector("#f-image-1");
+image1.addEventListener("click",go_to_clothing_page);
+image2.addEventListener("click",go_to_clothing_page);
+
+function go_to_clothing_page(){
+    localStorage.setItem("key","mens");
+    window.location.href="clothing.html";
+}

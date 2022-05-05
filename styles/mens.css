@@ -1,8 +1,9 @@
 body{
     font-family:  Arial;
 }
-
-
+img{
+    cursor: pointer;
+}
 #f-main1,#f-main3{
     display: flex;
     justify-content: space-evenly;
