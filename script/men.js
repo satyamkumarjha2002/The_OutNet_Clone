@@ -19,3 +19,16 @@ function go_to_clothing_page(){
     localStorage.setItem("key","mens");
     window.location.href="clothing.html";
 }
+
+let toClothing=()=>{
+    window.location.href="clothing.html";
+}
+
+
+document.querySelector(".cat1").addEventListener("click",toClothing);
+document.querySelector(".cat2").addEventListener("click",toClothing);
+document.querySelector(".cat3").addEventListener("click",toClothing);
+
+
+
+document.querySelector(".carousel-cell").addEventListener("click",toClothing);

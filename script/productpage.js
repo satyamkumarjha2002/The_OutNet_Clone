@@ -6,14 +6,16 @@ document.querySelector("#nav-start").innerHTML=navbar();
 setTimeout(() => {
     navbar_function()
 }, 1000);
+
 let allimgb= document.querySelectorAll("#z-product-color>img")
 for(let i=0; i<allimgb.length; i++){
     allimgb[i].addEventListener("click", ()=>{
         selectcolorfun(i)
     })
 }
-let data=JSON.parse(localStorage.getItem("productpage"))
-console.log(data)
+
+let data=JSON.parse(localStorage.getItem("productpage")) || [];
+console.log(data[0])
 function sortvalue(value){
     if(value==null){
       return
@@ -116,3 +118,28 @@ function wholesizefun(){
         document.querySelector("#ini1-detail .fa-chevron-down").style.transform="rotate(0deg)"
     }
 }
+
+
+// adding data in wishlist start from here
+
+// let objData=()=>{
+//     class wishlist{
+//         constructor(img)
+//     }
+// }
+
+
+
+
+
+
+
+let wishData=JSON.parse(localStorage.getItem("wishlist")) || [];
+
+let wishlist=(()=>{
+
+    wishData.push(data[0]);
+localStorage.setItem("wishlist",JSON.stringify(wishData));
+window.location.href="wishlist.html";
+});
+document.getElementById("add_to_wishlist").addEventListener("click",wishlist);
