@@ -18,6 +18,7 @@ img:hover{
     /* border: 1px solid black; */
     display: flex;
     gap: -5px;
+    margin-top: 20px;
     /* margin: auto; */
 }
 
