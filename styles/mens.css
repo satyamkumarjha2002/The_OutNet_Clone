@@ -61,3 +61,25 @@ height: 630px;
     font-family:  Arial;
 }
 
+#lastdiv4
+{
+    width: 95%;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 2%;
+}
+#lastdiv4>div{
+    width: 379px;
+    /* height: 349px; */
+    /* border: 1px solid black; */
+}
+#lady4
+{
+    width: 319px;
+    /* height: 380px; */
+    cursor: pointer;
+
+}

@@ -64,21 +64,21 @@ let data = [{
     "bl": "VINCE."
 }];
 
-
 let iamge1 = document.querySelector("#m-image-2");
 let image2 = document.querySelector("#m-image-1");
 iamge1.addEventListener("click", go_to_clothing_page);
 image2.addEventListener("click", go_to_clothing_page);
+
+function go_to_clothing_page() {
+    localStorage.setItem("key", "womens");
+    window.location.href = "clothing.html"
+}
 import {
     slider
 } from "../components/slider.js";
 
 slider(data);
 
-function go_to_clothing_page() {
-    localStorage.setItem("key", "womens");
-    window.location.href = "clothing.html"
-}
 import {
     footer,
     footerPart2
