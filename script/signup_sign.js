@@ -103,3 +103,7 @@ function change_bgc_of_promitio() {
     promotion_btn1.addEventListener("click", changebgc1)
     promotion_btn2.addEventListener("click", changebgc2)
 }
+import { footer,footerPart2 } from "../components/footer.js";
+document.getElementById("footer").innerHTML=footer();
+
+document.getElementById("lower").innerHTML=footerPart2();
