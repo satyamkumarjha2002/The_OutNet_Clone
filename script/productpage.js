@@ -10,6 +10,53 @@ document.querySelector("#nav-start").innerHTML = navbar();
 setTimeout(() => {
     navbar_function()
 }, 1000);
+
+let allimgb= document.querySelectorAll("#z-product-color>img")
+for(let i=0; i<allimgb.length; i++){
+    allimgb[i].addEventListener("click", ()=>{
+        selectcolorfun(i)
+    })
+}
+
+let data=JSON.parse(localStorage.getItem("productpage")) || [];
+console.log(data[0])
+function sortvalue(value){
+    if(value==null){
+      return
+    }
+    value=value.trim()
+    value= value.split("")
+   //  console.log(value)
+     for(let i=0; i<value.length; i++){
+       if(value[i]=="$"||value[i]==","||value[i]=="o"||value=="f"||value=="f"||value=="%"||value==' '){
+         value.splice(i,1)
+         i=0
+       }
+     }
+   if(value[5]=="f"){
+     value=value.join("")
+   let x= value[0]+value[1]
+     return Number(x)
+   } 
+     return Number(value.join(""))
+     
+   }
+function append(){
+    document.querySelector("#z-product-img img").src=data[0]["Image18__image src"]
+    document.querySelector("#fp").innerText=data[0].PriceWithSchema9__value
+    if(data[0].ProductItem24__designer!=undefined){
+        document.querySelector("#z-product-detail h2").innerText=data[0].ProductItem24__designer
+    }
+    else{
+        document.querySelector("#z-product-detail h2").innerText=null
+    }
+    document.querySelector("#des").innerText=data[0].ProductItem24__name
+    document.querySelector("#z-offerp s").innerText=data[0].PriceWithSchema9__wasPrice
+    document.querySelector("#z-offerp span").innerText=data[0].PriceWithSchema9__discount
+   let finalp=sortvalue(data[0].PriceWithSchema9__wasPrice)-sortvalue(data[0].PriceWithSchema9__value)
+    
+    
+    document.querySelector("#approx").innerText=`(Approx. ${finalp})`
 let allimgb = document.querySelectorAll("#z-product-color>img")
 for (let i = 0; i < allimgb.length; i++) {
     allimgb[i].addEventListener("click", () => {
@@ -120,6 +167,31 @@ function wholesizefun() {
     }
 }
 
+
+// adding data in wishlist start from here
+
+// let objData=()=>{
+//     class wishlist{
+//         constructor(img)
+//     }
+// }
+
+
+
+
+
+
+
+let wishData=JSON.parse(localStorage.getItem("wishlist")) || [];
+
+let wishlist=(()=>{
+
+    wishData.push(data[0]);
+localStorage.setItem("wishlist",JSON.stringify(wishData));
+let w=document.getElementById("add_to_wishlist");
+w.innerText="Added to Wishlist";
+});
+document.getElementById("add_to_wishlist").addEventListener("click",wishlist);
 let add_to_bag_btn = document.querySelector("#add_to_bag");
 add_to_bag_btn.addEventListener("click", addToBag);
 let s_fromlocal = JSON.parse(localStorage.getItem("cart_data"));

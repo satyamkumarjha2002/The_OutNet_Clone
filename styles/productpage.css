@@ -65,8 +65,12 @@
 #add_to_wishlist{
     padding:10px 187px 10px 187px;
     background-color: white;
-    border:1px solid black
+    border:1px solid black;
 }
+
+
+
+
 #z-button button{
     margin-top:15px
    
