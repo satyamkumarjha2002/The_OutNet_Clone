@@ -21,6 +21,7 @@ function go_to_clothing_page(){
 }
 
 let toClothing=()=>{
+    localStorage.setItem("key","mens");
     window.location.href="clothing.html";
 }
 
@@ -32,10 +33,6 @@ document.querySelector(".cat3").addEventListener("click",toClothing);
 
 
 document.querySelector(".carousel-cell").addEventListener("click",toClothing);
-function go_to_clothing_page() {
-    localStorage.setItem("key", "mens");
-    window.location.href = "clothing.html";
-}
 
 import {navbar} from "../components/navbar.js";
 import { navbar_function } from "../components/navbar_function.js";;
