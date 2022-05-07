@@ -90,3 +90,8 @@ import {
 document.getElementById("footer").innerHTML = footer();
 
 document.getElementById("lower").innerHTML = footerPart2();
+
+import {navbar} from "../components/navbar.js";
+import { navbar_function } from "../components/navbar_function.js";;
+document.querySelector("#navbar-start").innerHTML=navbar();
+navbar_function();
