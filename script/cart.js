@@ -101,6 +101,9 @@ function display(data, repetation) {
         })
         let wish_btn = document.createElement("i");
         wish_btn.setAttribute("class", "fa-solid fa-heart");
+        wish_btn.addEventListener("click", () => {
+            add_to_wish_list(ele);
+        });
         wish_and_delet_btn.append(delete_btn, wish_btn);
         button.append(inc_dec_btn, wish_and_delet_btn);
         detail_div.append(name, discription, size_div, price, strike_div, button);
@@ -220,14 +223,14 @@ function display_payment(data, key) {
     let total = Number(final_price) + 25 + 37.5;
     if (key == 1) {
         var dis = final_price * (30 / 100);
-        total=total-dis;
+        total = total - dis;
         let discount = document.querySelector("#s-discount");
         discount.innerText = "$" + dis;
     }
     sub_total.innerText = "$" + final_price;
     let totalprice = document.querySelector("#total");
     totalprice.innerText = "$" + total;
-    localStorage.setItem("total_price",total);
+    localStorage.setItem("total_price", total);
 }
 
 display_payment(from_local, 0);
@@ -251,8 +254,17 @@ function apply_coupan() {
             }
         }
     }
-    user_input.innerText="";
+    user_input.innerText = "";
 }
 
+
+function add_to_wish_list(ele){
+    event.preventDefault();
+    let wish_list_data=JSON.parse(localStorage.getItem("wishlist"));
+    wish_list_data.push(ele);
+    localStorage.setItem("wishlist",JSON.stringify(wish_list_data));
+    alert("Added To Wishlist");
+    deleted(ele)
+}
 let discount_coupan = ["satyam30", "Mahesh30", "faisal30", "sanjay30", "lakhan30"];
 localStorage.setItem("discount_coupan", JSON.stringify(discount_coupan));
