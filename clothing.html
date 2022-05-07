@@ -1,55 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing</title>
     <link rel="icon"
-    href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyKpjCSeyFZ3Mo1aie-BnVIm9mUp55qndCA&usqp=CAU"
-    type="image/x-icon" type="image/x-icon">
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKyKpjCSeyFZ3Mo1aie-BnVIm9mUp55qndCA&usqp=CAU"
+        type="image/x-icon" type="image/x-icon">
     <link rel="stylesheet" href="./styles/clothing.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="responsive/navbar.css">
+    <link rel="stylesheet" href="responsive\clothing.css">
 </head>
+
 <body>
-    <div id="navbar">
+    <div id="navbar-start">
 
     </div>
     <div id="z-top-c">
         <div id="z-top-in1">
             <h2>CLOTHING</h2>
             <h6>Our luxurious men's clothing sale features a wide variety of men's designer clothing,
-                 with everything you need to create unique looks that suit your individual style. Shop
-                  from men's shirts, T-shirts, pants, jackets and more to discover discount investment pieces
-                   from the world's finest menswear brands including Alexander McQueen, Balenciaga and Off-White.</h6>
+                with everything you need to create unique looks that suit your individual style. Shop
+                from men's shirts, T-shirts, pants, jackets and more to discover discount investment pieces
+                from the world's finest menswear brands including Alexander McQueen, Balenciaga and Off-White.</h6>
         </div>
         <div id="z-top-in2">
-            <img src="https://www.theoutnet.com/ycm/resource/blob/1229948/4ba1342536b4df929473d6c284f35a73/mens-clothing-image-data.jpg?imwidth=3000&improfile=isc" alt="" >
+            <img src="https://www.theoutnet.com/ycm/resource/blob/1229948/4ba1342536b4df929473d6c284f35a73/mens-clothing-image-data.jpg?imwidth=3000&improfile=isc"
+                alt="">
         </div>
-    
+
     </div>
     <div id="z-main">
         <div id="z-main-top">
             <div id="z-counter-div">
-            <span id="z-counter">0</span>
+                <span id="z-counter">0</span>
+            </div>
+            <div id="z-orderby">
+                <select name="Sortyby" id="z-sort">
+                    <option value="">Sortby</option>
+                    <option value="Recommeded">Recommeded</option>
+                    <option value="new">Newest</option>
+                    <option value="htl">Hight To Low</option>
+                    <option value="lth">Low To High</option>
+                    <option value="hd">Highest Discount</option>
+                </select>
+            </div>
         </div>
-        <div id="z-orderby">
-            <select name="Sortyby" id="z-sort"  >
-                <option value="">Sortby</option>
-                <option value="Recommeded">Recommeded</option>
-                <option value="new">Newest</option>
-                <option value="htl">Hight To Low</option>
-                <option value="lth">Low To High</option>
-                <option value="hd">Highest Discount</option>
-            </select>
-        </div>
-        </div>
-       
+
     </div>
     <div id="z-bind-both">
         <div id="z-sort-items">
             <hr>
-            <div id="z-cat" >
+            <div id="z-cat">
                 <p>Categories</p>
                 <p style="color:grey">All</p>
                 <ul>
@@ -75,7 +80,7 @@
                 <p style="color:grey">All</p>
                 <p>INT</p>
                 <ul>
-                    
+
                     <li><input type="checkbox"><span>XXS</span></li>
                     <li><input type="checkbox"><span>XS</span></li>
                     <li><input type="checkbox"><span>S</span></li>
@@ -86,7 +91,7 @@
                     <li><input type="checkbox"><span>XXXL</span></li>
                     <li><input type="checkbox"><span>3XL</span></li>
                     <li><input type="checkbox"><span>4XL</span></li>
-                   
+
                 </ul>
             </div>
             <hr>
@@ -95,15 +100,15 @@
                 <p style="color:grey">All</p>
                 <p>INT</p>
                 <ul>
-                    
-                  
+
+
                     <li><input type="checkbox"><span>S</span></li>
                     <li><input type="checkbox"><span>M</span></li>
                     <li><input type="checkbox"><span>L</span></li>
                     <li><input type="checkbox"><span>XL</span></li>
                     <li><input type="checkbox"><span>XXL</span></li>
-                    
-                   
+
+
                 </ul>
             </div>
             <hr>
@@ -112,8 +117,8 @@
                 <p style="color:grey">All</p>
                 <p>EU</p>
                 <ul>
-                    
-                  
+
+
                     <li><input type="checkbox"><span>39</span></li>
                     <li><input type="checkbox"><span>39.5</span></li>
                     <li><input type="checkbox"><span>40</span></li>
@@ -124,7 +129,7 @@
                     <li><input type="checkbox"><span>45</span></li>
                     <li><input type="checkbox"><span>46</span></li>
                     <li><input type="checkbox"><span>46.5</span></li>
-                   
+
                 </ul>
             </div>
             <hr>
@@ -133,52 +138,55 @@
                 <p style="color:grey">All</p>
                 <p>EU</p>
                 <ul>
-                    
-                  
-                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/animal.jpg" alt="" ><span>Animal</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:black"><span>Black</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:blue"><span>Blue</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:brown"><span>Brown</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:#953E47"><span>Burgundy</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Gray"><span>Gray</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Green"><span>Green</span></li>
-                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/metallic.jpg" alt="" ><span>Metallic</span></li>
-                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/multi.jpg" alt=""><span>Multicolor</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:#E6C3AF"><span>Neutral</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Orange"><span>Orange</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Pink"><span>Pink</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Purple"><span>Purple</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Red"><span>Red</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:white"><span>White</span></li>
-                    <li><input type="checkbox"><img  alt="" style="background-color:Yellow"><span>Yellow</span></li>
-                   
+
+
+                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/animal.jpg"
+                            alt=""><span>Animal</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:black"><span>Black</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:blue"><span>Blue</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:brown"><span>Brown</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:#953E47"><span>Burgundy</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Gray"><span>Gray</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Green"><span>Green</span></li>
+                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/metallic.jpg"
+                            alt=""><span>Metallic</span></li>
+                    <li><input type="checkbox"><img src="https://www.theoutnet.com/assets/ton-color-swatch/multi.jpg"
+                            alt=""><span>Multicolor</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:#E6C3AF"><span>Neutral</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Orange"><span>Orange</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Pink"><span>Pink</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Purple"><span>Purple</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Red"><span>Red</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:white"><span>White</span></li>
+                    <li><input type="checkbox"><img alt="" style="background-color:Yellow"><span>Yellow</span></li>
+
                 </ul>
             </div>
             <hr>
             <div id="z-price">
                 <p>Price</p>
                 <ul>
-                <div id="z-showrange">
-                    <div id="z-min">$0</div>
-                    <div id="z-max">$3000</div>
-                </div>
-                <div class="slider">
-                    <div class="progress"></div>
-                  </div>
-                  <div class="range-input">
-                    <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
-                    <input type="range" class="range-max" min="0" max="10000" value="3000" step="100">
-                  </div>
+                    <div id="z-showrange">
+                        <div id="z-min">$0</div>
+                        <div id="z-max">$3000</div>
+                    </div>
+                    <div class="slider">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="range-input">
+                        <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                        <input type="range" class="range-max" min="0" max="10000" value="3000" step="100">
+                    </div>
                 </ul>
             </div>
             <hr>
             <div id="z-fabric">
                 <p>Fabric</p>
                 <p style="color:grey">All</p>
-                
+
                 <ul>
-                    
-                  
+
+
                     <li><input type="checkbox"><span>Cotton</span></li>
                     <li><input type="checkbox"><span>Wool</span></li>
                     <li><input type="checkbox"><span>Cashmere</span></li>
@@ -187,45 +195,51 @@
                     <li><input type="checkbox"><span>Leather</span></li>
                     <li><input type="checkbox"><span>Silk</span></li>
                     <li><input type="checkbox"><span>Velvet</span></li>
-                    
-                   
+
+
                 </ul>
             </div>
             <hr>
             <div id="z-designer">
                 <p>Designer</p>
                 <p style="color:grey">All</p>
-                
+
                 <ul>
-                    
-                    <li><p>Top Designers this week</p></li>
+
+                    <li>
+                        <p>Top Designers this week</p>
+                    </li>
                     <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li><input type="checkbox"><span>VALENTINO</span></li>
                     <li><input type="checkbox"><span>JAMES PERSE</span></li>
                     <li><input type="checkbox"><span>ERMENEGILGO ZEGNA</span></li>
                     <li><input type="checkbox"><span>SANDRO</span></li>
-                   <li>A-Z Designers</li>
-                   <li><input type="text" style="padding:10px" placeholder="search designer"></li>
-                   <li>0-9</li>
-                   <li><input type="checkbox"><span>7 FOR ALL MANKING</span></li>
-                   <li>A</li>
-                   <li><input type="checkbox"><span>A.P.C</span></li>
+                    <li>A-Z Designers</li>
+                    <li><input type="text" style="padding:10px" placeholder="search designer"></li>
+                    <li>0-9</li>
+                    <li><input type="checkbox"><span>7 FOR ALL MANKING</span></li>
+                    <li>A</li>
+                    <li><input type="checkbox"><span>A.P.C</span></li>
                     <li><input type="checkbox"><span>ACNE STUDIOS</span></li>
                     <li><input type="checkbox"><span>ACNE STUDIOS BLAKONST</span></li>
                     <li><input type="checkbox"><span>ADIDAS</span></li>
-                    <li><input type="checkbox"><span>ADIDAS ORIGINALS</span></li><li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
+                    <li><input type="checkbox"><span>ADIDAS ORIGINALS</span></li>
+                    <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li><input type="checkbox"><span>ALEXANDER MACQUEEN</span></li>
                     <li><input type="checkbox"><span>AMBUSH</span></li>
                     <li><input type="checkbox"><span>AMI ALEXANDRE MATTIUSSI</span></li>
-                    <li><input type="checkbox"><span>AMIRI</span></li><li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
+                    <li><input type="checkbox"><span>AMIRI</span></li>
+                    <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li><input type="checkbox"><span>ARMY BY YVES SALOMON</span></li>
                     <li><input type="checkbox"><span>ASPESI</span></li>
                     <li>B</li>
-                    <li><input type="checkbox"><span>BALENCIAGA</span></li><li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
+                    <li><input type="checkbox"><span>BALENCIAGA</span></li>
+                    <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li><input type="checkbox"><span>BALMAIN</span></li>
                     <li><input type="checkbox"><span>BELSTAFF</span></li>
                     <li><input type="checkbox"><span>BRIONI</span></li>
-                    <li><input type="checkbox"><span>BURBERRY</span></li><li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
+                    <li><input type="checkbox"><span>BURBERRY</span></li>
+                    <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li>C</li>
                     <li><input type="checkbox"><span>CANALI</span></li>
                     <li><input type="checkbox"><span>CC COLLECTION CORNELIANI</span></li>
@@ -289,7 +303,8 @@
                     <li><input type="checkbox"><span>RAG & BONE</span></li>
                     <li><input type="checkbox"><span>RE/DONE</span></li>
                     <li><input type="checkbox"><span>RE/DONE BY HANES</span></li>
-                    <li><input type="checkbox"><span>RE/DONE BY LEVI'S </span></li><li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
+                    <li><input type="checkbox"><span>RE/DONE BY LEVI'S </span></li>
+                    <li><input type="checkbox"><span>DOLCE & GABBANA</span></li>
                     <li><input type="checkbox"><span>REEBOOK</span></li>
                     <li><input type="checkbox"><span>RICK OWENS</span></li>
                     <li><input type="checkbox"><span>ROBERT CAVALLI</span></li>
@@ -315,20 +330,32 @@
                     <li>Z</li>
                     <li><input type="checkbox"><span>Z ZEGNA</span></li>
 
-                    
-                   
+
+
                 </ul>
             </div>
-            
+
         </div>
-     
+
         <div id="z-showdata">
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
+<script type="module">
+    import {
+    navbar
+} from "../components/navbar.js";
+import {
+    navbar_function
+} from "../components/navbar_function.js";
+
+document.querySelector("#navbar-start").innerHTML = navbar();
+navbar_function();
+</script>
 <script src="./product data/json_to_ob.js"></script>
 <script src="./script/clothing.js" type="module"></script>
 <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>

@@ -150,5 +150,5 @@ let removeData = ((ele, index) => {
   data.splice(index, 1);
   localStorage.setItem("wishlist", JSON.stringify(data));
   let data1 = JSON.parse(localStorage.getItem("wishlist"));
-  append(data1)
-})
+  append(data1);
+});

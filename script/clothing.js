@@ -1,13 +1,4 @@
-import {
-  navbar
-} from "../components/navbar.js";
-document.querySelector("#navbar").innerHTML = navbar();
-import {
-  navbar_function
-} from "../components/navbar_function.js";
-setTimeout(() => {
-  navbar_function()
-}, 1000);
+
 let product_data = JSON.parse(localStorage.getItem("product_data"));
 let key = localStorage.getItem("key");
 console.log(key)
