@@ -108,8 +108,9 @@ font-size: 18px;
 }
 
 #remove{
-    position: absolute;
-    left: 24%;
+    position: relative;
+    left: 45%;
+    top: 35px;
     margin-top: 20px;
     cursor: pointer;
 }

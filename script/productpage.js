@@ -140,6 +140,7 @@ let wishlist=(()=>{
 
     wishData.push(data[0]);
 localStorage.setItem("wishlist",JSON.stringify(wishData));
-window.location.href="wishlist.html";
+let w=document.getElementById("add_to_wishlist");
+w.innerText="Added to Wishlist";
 });
 document.getElementById("add_to_wishlist").addEventListener("click",wishlist);
