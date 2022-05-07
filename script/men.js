@@ -19,3 +19,8 @@ function go_to_clothing_page() {
     localStorage.setItem("key", "mens");
     window.location.href = "clothing.html";
 }
+
+import {navbar} from "../components/navbar.js";
+import { navbar_function } from "../components/navbar_function.js";;
+document.querySelector("#navbar-start").innerHTML=navbar();
+navbar_function();
