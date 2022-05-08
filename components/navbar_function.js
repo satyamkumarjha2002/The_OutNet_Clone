@@ -257,6 +257,9 @@ function navbar_function() {
     function go_to_cart(){
         window.location.href="cart.html"
     }
+    let number_of_items=document.querySelector("#lblCartCount");
+    let cart_data_length=JSON.parse(localStorage.getItem("cart_data"));
+    number_of_items.innerText=cart_data_length.length;
 }
 
 export {
