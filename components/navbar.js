@@ -30,7 +30,10 @@ let navbar = () => {
             <i id="s_search" class="fa-solid fa-magnifying-glass"></i>
             <p>search</p>
             <a id="heart" href="wishlist.html"><i class="fa-solid fa-heart"></i></a>
-            <a href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+            <a href="cart.html">
+            <i class="fa" style="font-size:24px">&#xf07a;</i>
+            <span class='badge badge-warning' id='lblCartCount'> 0 </span>
+            </a>
         </div>
     </div>
     <div id="s-search-box">

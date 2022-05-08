@@ -133,6 +133,7 @@ function addToBag() {
     s_data.push(data[0]);
     localStorage.setItem("cart_data", JSON.stringify(s_data));
     add_to_bag_btn.innerText = "Added to Bag";
+    numberOfProduct();
 }
 
 let wishData = JSON.parse(localStorage.getItem("wishlist")) || [];
@@ -145,4 +146,10 @@ let wishlist = (() => {
     w.innerText = "Added to Wishlist";
 });
 
+function numberOfProduct(){
+    let number_of_prodtct=document.querySelector("#lblCartCount");
+    let data=JSON.parse(localStorage.getItem("cart_data"))
+    number_of_prodtct.innerText=data.length;
+}
+numberOfProduct();
 document.getElementById("add_to_wishlist").addEventListener("click", wishlist);

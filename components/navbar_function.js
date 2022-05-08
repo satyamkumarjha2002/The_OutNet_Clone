@@ -253,6 +253,10 @@ function navbar_function() {
     if (user_sing_in_data != null) {
         display_data.innerText = user_sing_in_data.first_name;
     }
+
+    function go_to_cart(){
+        window.location.href="cart.html"
+    }
 }
 
 export {
