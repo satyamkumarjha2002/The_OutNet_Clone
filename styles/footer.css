@@ -15,7 +15,6 @@
 
 #payment img{
     width: 50px;
-    height: 20px;
     padding: 5px;
     border: 1px solid rgb(206, 200, 200);
 }
@@ -157,3 +156,56 @@ font-family:  Arial;
 }
 
 /* footer css ends here */
+
+/* responsive*/
+@media all and (max-width: 840px){
+    #box1{
+        width: 100%;
+    }
+    #footer{
+        display: block;
+        padding: 10px;
+    }
+    #list{
+        display: none;
+    }
+    #input{
+        display: none;
+    }
+    .socialapp{
+        display: block;
+        width: 100%;
+       
+    }
+    #icon{
+        width: 60%;
+    }
+    #footer>#box2{
+        margin-top: 10px;
+        width: 100%;
+    }
+    #payment{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #support{
+       display: none;
+    }
+    #box2>.socialapp{
+        margin-top: 5px;
+    }
+    #hello1{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+    #hello2{
+        display: block;
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+ }

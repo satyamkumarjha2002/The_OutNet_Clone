@@ -12,7 +12,7 @@ body { font-family: sans-serif; }
 
 .carousel-cell {
   width: 15%;
-  height: 400px;
+  height: 100%;
   margin-right: 10px;
   /* background: #333; */
   background-color: white;
