@@ -18,6 +18,7 @@ let from_local = JSON.parse(localStorage.getItem("cart_data"));
 console.log(from_local);
 
 function display(data, repetation) {
+    numberOfProduct();
     let i = 0;
     let append_div = document.querySelector("#s-product-details");
     append_div.innerHTML = null;
@@ -266,5 +267,11 @@ function add_to_wish_list(ele){
     alert("Added To Wishlist");
     deleted(ele)
 }
+function numberOfProduct(){
+    let number_of_prodtct=document.querySelector("#lblCartCount");
+    let data=JSON.parse(localStorage.getItem("cart_data"))
+    number_of_prodtct.innerText=data.length;
+}
+numberOfProduct();
 let discount_coupan = ["satyam30", "Mahesh30", "faisal30", "sanjay30", "lakhan30"];
 localStorage.setItem("discount_coupan", JSON.stringify(discount_coupan));
