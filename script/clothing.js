@@ -1,7 +1,6 @@
 
 let product_data = JSON.parse(localStorage.getItem("product_data"));
 let key = localStorage.getItem("key");
-console.log(key)
 let data = product_data.different_data;
 switch (key) {
   case "mens":
@@ -19,7 +18,6 @@ switch (key) {
 }
 
 function showthediv(id) {
-  console.log(id)
   if (document.querySelector(`#${id} ul`).style.display == "" || document.querySelector(`#${id} ul`).style.display == "none") {
     if (id == "z-size-shoe" || id == "z-size-shirt" || id == "z-size") {
       document.querySelector(`#${id} ul`).style.display = "grid"
@@ -27,7 +25,6 @@ function showthediv(id) {
       document.querySelector(`#${id} ul`).style.display = "block"
     }
     for (let i = 0; i < alldiv.length; i++) {
-      console.log(id, alldiv[i].id)
       if (id !== alldiv[i].id) {
         document.querySelector(`#${alldiv[i].id} ul`).style.display = "none"
       }
@@ -133,8 +130,7 @@ function append(data) {
 
 function hoverred(img,image_link){
   img.style.cursor="pointer"
-  console.log(image_link)
-  img.src=image_link;
+   img.src=image_link;
 }
 function mouse_leaved(img,image_link){
   img.src=image_link;
