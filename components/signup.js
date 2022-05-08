@@ -10,9 +10,9 @@ let signup=()=>{
         <p>I'm new to THE OUTNET</p>
     </div>
     <label for="">Password</label>
-    <input type="text" name="" id="pass" placeholder="Createe New Password">
+    <input type="text" name="" id="pass" placeholder="Create New Password">
     <label for="">First Name</label>
-    <input type="text" placeholder="Enter first Name" id="s-fst-name">
+    <input type="text" placeholder="Enter First Name" id="s-fst-name">
     <label for="">Last Name</label>
     <input type="text" placeholder="Enter Last Name" id="s-lst-name">
     <div id="s-promotion">

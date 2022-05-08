@@ -46,7 +46,7 @@ let data = [{
     "thref": "https://www.theoutnet.com/en-in/shop/product/valentino/pants/tailored-pants/pleated-mohair-and-wool-blend-crepe-pants/1647597277894443",
     "isrc": "https://www.theoutnet.com/variants/images/45666037505175682/F/w250.jpg",
     "bl": "ASPESI"
-},{
+}, {
     "thref": "https://www.theoutnet.com/en-in/shop/product/givenchy/sunglasses/square-frame/hexagon-frame-crystal-embellished-gold-tone-sunglasses/20346390236093816",
     "isrc": "https://www.theoutnet.com/variants/images/20346390236093816/F/w250.jpg",
     "bl": "GIVENCHY"
@@ -68,6 +68,15 @@ let data = [{
     "bl": "DKNY"
 }];
 
+
+import { footer, footerPart2} from "../components/footer.js";
+document.getElementById("footer").innerHTML = footer();
+
+document.getElementById("lower").innerHTML = footerPart2();
+
+import {slider} from "../components/slider.js";
+
+slider(data);
 let iamge1 = document.querySelector("#m-image-2");
 let image2 = document.querySelector("#m-image-1");
 iamge1.addEventListener("click", go_to_clothing_page);
@@ -77,21 +86,20 @@ function go_to_clothing_page() {
     localStorage.setItem("key", "womens");
     window.location.href = "clothing.html"
 }
-import {
-    slider
-} from "../components/slider.js";
 
-slider(data);
+let toClothing = () => {
+    localStorage.setItem("key", "womens");
+    window.location.href = "clothing.html";
+}
 
-import {
-    footer,
-    footerPart2
-} from "../components/footer.js";
-document.getElementById("footer").innerHTML = footer();
+document.querySelector(".mcat1").addEventListener("click", toClothing);
+document.querySelector(".mcat2").addEventListener("click", toClothing);
+document.querySelector(".mcat3").addEventListener("click", toClothing);
 
-document.getElementById("lower").innerHTML = footerPart2();
 
-import {navbar} from "../components/navbar.js";
+document.querySelector(".carousel-cell").addEventListener("click", toClothing);
+
+import { navbar } from "../components/navbar.js";
 import { navbar_function } from "../components/navbar_function.js";;
-document.querySelector("#navbar-start").innerHTML=navbar();
+document.querySelector("#navbar-start").innerHTML = navbar();
 navbar_function();
