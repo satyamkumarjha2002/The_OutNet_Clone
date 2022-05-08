@@ -120,6 +120,9 @@ let append = (data) => {
     let addtoBag = document.createElement("button");
     addtoBag.setAttribute("id", "toBag");
     addtoBag.innerText = "Add to Bag";
+    addtoBag.addEventListener("click",()=>{
+      addtobag();
+    })
 
     let remove = document.createElement("i");
     remove.setAttribute("class", "fa-solid fa-xmark");
@@ -151,4 +154,9 @@ let removeData = ((ele, index) => {
   localStorage.setItem("wishlist", JSON.stringify(data));
   let data1 = JSON.parse(localStorage.getItem("wishlist"));
   append(data1);
+  window.location.reload();
 });
+
+let addtobag=()=>{
+  window.location.href="cart.html";
+}

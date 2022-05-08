@@ -130,6 +130,11 @@ font-family:  Arial;
     justify-content: space-between;
     font-family:  Arial;
 }
+#hello{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
  #hello1 {
     display: flex;
@@ -196,6 +201,11 @@ font-family:  Arial;
     #box2>.socialapp{
         margin-top: 5px;
     }
+    #hello{
+        display: block;
+        justify-content: space-between;
+        width: 100%;
+    }
     #hello1{
         display: block;
         width: 100%;
@@ -207,5 +217,14 @@ font-family:  Arial;
         width: 100%;
         margin: 0px;
         text-align: center;
+        font-size: 12px;
+        margin-top: -100px;
+
+    }
+    #hello2>#nano{
+        text-align: center;
+    }
+    #hello1>h4{
+        margin-bottom: 30px;
     }
  }
