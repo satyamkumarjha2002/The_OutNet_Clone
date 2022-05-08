@@ -31,7 +31,8 @@ span {
     align-items: center;
     justify-content: space-between;
     background-color: #F2F2F2;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #s-buttons>a {

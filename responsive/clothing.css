@@ -10,6 +10,7 @@
     }
     #z-top-in2{
         width: 100%;
+        margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -23,7 +24,6 @@
    #z-bind-both{
        width: 90%;
        margin: auto;
-       justify-content: space-between;
    }
    #z-sort-items{
        width: 20%;

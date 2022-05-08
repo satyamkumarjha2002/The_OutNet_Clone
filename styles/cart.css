@@ -1,8 +1,12 @@
+body{
+    overflow-x: hidden;
+    overflow-y:scroll ;
+}
 
 #s-cart-data {
     width: 95%;
     margin: auto;
-    background-color: #F2F2F2;
+    background-color: hsl(0, 0%, 95%);
     margin-bottom: 20px;
 }
 
