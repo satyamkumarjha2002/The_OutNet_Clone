@@ -11,7 +11,7 @@ let signin = () => {
     </div>
     <label for="">Password</label>
     <input type="password" id="pass" placeholder="Password">
-    <button id="s-signin">Sing in</button>
+    <button id="s-signin">Sign In</button>
     <a style="text-decoration: underline;" href="#">Forgot Your Password?</a>`
 }
 export {signin}
