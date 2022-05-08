@@ -12,7 +12,6 @@ document.getElementById("lower").innerHTML = footerPart2();
 let data = JSON.parse(localStorage.getItem("wishlist")) || [];
 let noOfItem = document.getElementById("noitem");
 noOfItem.innerText = `${data.length} Item`;
-console.log(data);
 
 
 function sortvalue(value) {
@@ -28,7 +27,6 @@ function sortvalue(value) {
       value.splice(i, 1);
     }
   }
-  console.log(value);
   let bag = "";
   for (let j = 0; j < value.length; j++) {
     bag = bag + value[j];
@@ -84,6 +82,13 @@ let append = (data) => {
     d1.setAttribute("id", "detailBox")
     let img = document.createElement("img");
     img.src = ele["Image18__image src"];
+
+    img.addEventListener("mouseover", () => {
+      hoverred(img, ele["Image18__image src 2"]);
+    });
+    img.addEventListener("mouseleave", () => {
+      mouse_leaved(img, ele["Image18__image src"])
+    })
     let design = document.createElement("h2");
     design.innerText = ele.ProductItem24__designer;
     let name = document.createElement("p");
@@ -98,7 +103,7 @@ let append = (data) => {
 
     let price = document.createElement("p");
     price.setAttribute("id", "finalPrice");
-    // console.log(ele.PriceWithSchema9__value);
+
     let finalPrice = ele.PriceWithSchema9__value.trim().split("");
     for (let i = 0; i < finalPrice.length; i++) {
       while (finalPrice[i] == "$") {
@@ -109,7 +114,6 @@ let append = (data) => {
     for (let j = 0; j < finalPrice.length; j++) {
       bag = bag + finalPrice[j];
     }
-    console.log(bag);
     price.innerText = `$${Number(bag)}`;
 
     price.style.color = "red";
@@ -120,7 +124,7 @@ let append = (data) => {
     let addtoBag = document.createElement("button");
     addtoBag.setAttribute("id", "toBag");
     addtoBag.innerText = "Add to Bag";
-    addtoBag.addEventListener("click",()=>{
+    addtoBag.addEventListener("click", () => {
       addtobag();
     })
 
@@ -141,6 +145,14 @@ let append = (data) => {
 }
 append(data)
 
+function hoverred(img, image_link) {
+  img.style.cursor = "pointer"
+  img.src = image_link;
+}
+
+function mouse_leaved(img, image_link) {
+  img.src = image_link;
+}
 
 // Image18__image src
 // ProductItem24__name
@@ -157,6 +169,6 @@ let removeData = ((ele, index) => {
   window.location.reload();
 });
 
-let addtobag=()=>{
-  window.location.href="cart.html";
+let addtobag = () => {
+  window.location.href = "cart.html";
 }

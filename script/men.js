@@ -38,3 +38,42 @@ import {navbar} from "../components/navbar.js";
 import { navbar_function } from "../components/navbar_function.js";;
 document.querySelector("#navbar-start").innerHTML=navbar();
 navbar_function();
+
+let cursol_image=document.querySelectorAll("#crusol_image img");
+
+cursol_image.forEach(element => {
+    element.addEventListener("mouseover", () => {
+        hover(element, element.src);
+    });
+    element.addEventListener("mouseleave", () => {
+        mouse_lea(element, element.src)
+    })
+});
+
+function hover(img, image_link) {
+    img.style.cursor = "pointer"
+    let new_link="";
+    for(let i=0;i<image_link.length;++i){
+        if(image_link[i]=="F"){
+            new_link=new_link+"R";
+        }else{
+            new_link=new_link+image_link[i];
+        }
+       
+    }
+    img.src=new_link;
+}
+
+function mouse_lea(img, image_link) {
+    let new_link="";
+    for(let i=0;i<image_link.length;++i){
+        if(image_link[i]=="R"){
+            new_link=new_link+"F";
+        }else{
+            new_link=new_link+image_link[i];
+        }
+       
+    }
+    img.src=new_link;
+}
+console.log(cursol_image)

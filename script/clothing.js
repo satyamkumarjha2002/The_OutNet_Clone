@@ -102,7 +102,13 @@ function append(data) {
     let tag = document.createElement("span")
     let div1 = document.createElement("div")
     div1.setAttribute("class", "z-flex")
-    img.src = el["Image18__image src"]
+    img.src = el["Image18__image src"];
+    img.addEventListener("mouseover",()=>{
+      hoverred(img,el["Image18__image src 2"]);
+    });
+    img.addEventListener("mouseleave",()=>{
+      mouse_leaved(img, el["Image18__image src"])
+    })
     if(el.ProductItem24__designer!=null){
     h4.innerText = el.ProductItem24__designer
   }
@@ -125,6 +131,14 @@ function append(data) {
   document.querySelector("#z-counter-div").innerText = `${data.length} results`
 }
 
+function hoverred(img,image_link){
+  img.style.cursor="pointer"
+  console.log(image_link)
+  img.src=image_link;
+}
+function mouse_leaved(img,image_link){
+  img.src=image_link;
+}
 function sortvalue(value) {
   if (value == null) {
     return

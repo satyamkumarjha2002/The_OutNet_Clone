@@ -34,6 +34,12 @@ function display(data, repetation) {
         img_div.setAttribute("class", "image")
         let image = document.createElement("img");
         image.src = ele["Image18__image src"];
+        image.addEventListener("mouseover",()=>{
+            hoverred(image,ele["Image18__image src 2"]);
+          });
+          image.addEventListener("mouseleave",()=>{
+            mouse_leaved(image, ele["Image18__image src"])
+          })
         img_div.append(image);
         let detail_div = document.createElement("div");
         detail_div.setAttribute("class", "product_detaild");
@@ -113,6 +119,14 @@ function display(data, repetation) {
         ++i //for showing repetation of product;
     })
 }
+
+function hoverred(img,image_link){
+    img.style.cursor="pointer"
+    img.src=image_link;
+  }
+  function mouse_leaved(img,image_link){
+    img.src=image_link;
+  }
 
 function unique(data) {
     let uniq_data = [];

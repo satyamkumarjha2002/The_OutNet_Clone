@@ -185,3 +185,7 @@
     height:100%;
     width:100%
 }
+
+#add_to_bag,#add_to_wishlist{
+    cursor: pointer;
+}
