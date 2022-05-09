@@ -69,6 +69,14 @@ function navbar_function() {
     j.addEventListener("mouseleave", () => {
         leaved(1)
     })
+    let signup_signin=document.querySelector("#s-signup-login");
+    signup_signin.addEventListener("mouseover", () => {
+        leaved(10);
+    })
+    let body = document.querySelector("#s-middle");
+    body.addEventListener("mouseover", () => {
+        leaved(10);
+    })
     let border = document.querySelector("#s-nav_btn");
 
     function hoverred(value) {
@@ -232,8 +240,8 @@ function navbar_function() {
     function user_input(event) {
         let value = query.value;
         if (event.key == "Enter") {
-            localStorage.setItem("key",value);
-            window.location.href="clothing.html";
+            localStorage.setItem("key", value);
+            window.location.href = "clothing.html";
         }
     }
 
@@ -254,12 +262,12 @@ function navbar_function() {
         display_data.innerText = user_sing_in_data.first_name;
     }
 
-    function go_to_cart(){
-        window.location.href="cart.html"
+    function go_to_cart() {
+        window.location.href = "cart.html"
     }
-    let number_of_items=document.querySelector("#lblCartCount");
-    let cart_data_length=JSON.parse(localStorage.getItem("cart_data"));
-    number_of_items.innerText=cart_data_length.length;
+    let number_of_items = document.querySelector("#lblCartCount");
+    let cart_data_length = JSON.parse(localStorage.getItem("cart_data"));
+    number_of_items.innerText = cart_data_length.length;
 }
 
 export {
