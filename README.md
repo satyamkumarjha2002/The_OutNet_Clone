@@ -1,3 +1,4 @@
+<img src="https://miro.medium.com/max/1400/1*TAZUupFlp6HTOlneDDwwHQ.png"></img>
 # Unit-3-project
 
 Clone of The OutNet.com
@@ -35,7 +36,7 @@ This is Landing page of our project
 Here you find two sectio Male and Female after clicking on any section we will go to there respective page lets take example if i click on Men. You will go to Men page
 
 Men Page desgin and functionlity done by Faisal Khan, and Faisal also make footer for all wepage.
-
+<img src="https://miro.medium.com/max/1400/1*rhPAAVQFCyM0yd5EdnUGaw.png"></img>
 In Men page we see Products Related to Men Here you will find a image slider in image slider we have use some trending products image
 
 
@@ -76,7 +77,7 @@ Payment Page
 After filling all details you have to click on submit buttons to Conform your orders
 
 We have make all of our page Resposive(easy to open in mobile) here you can see some images
-
+<img src="https://miro.medium.com/max/1400/1*Lrkzfe-S6OXNJ7uTiOtC0Q.jpeg"></img>
 
 This is all about our Construct week Project,
 
