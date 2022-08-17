@@ -78,7 +78,3 @@ After filling all details you have to click on submit buttons to Conform your or
 
 We have make all of our page Resposive(easy to open in mobile) here you can see some images
 <img src="https://miro.medium.com/max/1400/1*Lrkzfe-S6OXNJ7uTiOtC0Q.jpeg"></img>
-
-This is all about our Construct week Project,
-
-Thank You Reading…
