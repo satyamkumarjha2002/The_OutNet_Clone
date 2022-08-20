@@ -29,8 +29,7 @@ This is our Github Repo link: Github Repo The outnet.ocm
 Now i will Show you interface and some functionlity of our project
 
 Landing page,navbar and cart page made by Satyam Kumar Jha, In Navbar you can find a dropdown menu form navbar you can search products by there name.
-
-
+Medieum Link:-<a href="https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f">https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f</a>
 This is Landing page of our project
 
 Here you find two sectio Male and Female after clicking on any section we will go to there respective page lets take example if i click on Men. You will go to Men page
