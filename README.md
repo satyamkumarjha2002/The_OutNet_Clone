@@ -2,7 +2,6 @@
 <h1 align="center">The OutNet.com </h1>
 <img src="https://miro.medium.com/max/1400/1*TAZUupFlp6HTOlneDDwwHQ.png"></img>
  <p><h3>Live Link - </h3>(https://gorgeous-sopapillas-340399.netlify.app/womens.html)</p>
- Medieum Link:-<a href="https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f">https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f</a>
  
 Hello everyone hope you are doing well, Today i will write about our construct week project. In our costruct week we are clone the website of The OUTNET.com for clonig out net we had use Html to make structure of our project CSS for styling and JavaScript for function like get data from database, serach function, sorting, filtter and many more function we have use
 
@@ -11,6 +10,8 @@ HTML: 18%, CSS: 6.3%, JavaScript:78%
 For making this project we have alloted a group by
 
 Masai School
+
+ Medieum Link:-<a href="https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f">https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f</a>
 
 in our group we are five members Satyam Kumar Jha, Faisal Khan, Mahes Raut, Sanjay Kushwaha and Lakhan Yadav. My team members are very supportive. If anyone face any problem durring making the project they call anyone to ask help and they are always stand to help and support each other If they are not in my group i think it difficult to complete our work in given time span.
 
