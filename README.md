@@ -13,7 +13,7 @@ Masai School
 
  Medieum Link:-<a href="https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f">https://medium.com/@faisal.z.khan5538/unit-3-project-753779b1b51f</a>
 
-in our group we are five members Satyam Kumar Jha, Faisal Khan, Mahes Raut, Sanjay Kushwaha and Lakhan Yadav. My team members are very supportive. If anyone face any problem durring making the project they call anyone to ask help and they are always stand to help and support each other If they are not in my group i think it difficult to complete our work in given time span.
+in our group we are five members Satyam Kumar Jha, Faisal Khan, Mahesh Raut, Sanjay Kushwaha and Lakhan Yadav. My team members are very supportive. If anyone face any problem durring making the project they call anyone to ask help and they are always stand to help and support each other If they are not in my group i think it difficult to complete our work in given time span.
 
 For Making this project whatever technology we used all of those teach by our teacher and mentor of
 
